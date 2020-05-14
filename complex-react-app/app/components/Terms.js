@@ -1,8 +1,9 @@
 import React from "react"
+import Page from "./Page"
 
 function Terms() {
   return (
-      <div className="container container--narrow py-md-5">
+      <Page title="Terms and Conditions">
         <h2>Our Terms &amp; Conditions</h2>
         <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum
           labore quisquam vel id dicta fuga! Ducimus, quo. Dolore commodi aliquid error veritatis consequuntur,
@@ -19,7 +20,7 @@ function Terms() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam distinctio atque sint earum?
           Temporibus, voluptas aspernatur aliquam nisi sed harum laborum, nemo odio animi officia quisquam.
           Veniam, natus reprehenderit.</p>
-      </div>
+      </Page>
   )
 }
 
