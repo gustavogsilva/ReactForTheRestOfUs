@@ -9,7 +9,7 @@ function HeaderLoggedOut(props) {
     e.preventDefault()
     try {
       const response = await Axios.post(
-        'http://localhost:8080/login',
+        '/login',
           {username, password}
       )
       if (response.data) {
