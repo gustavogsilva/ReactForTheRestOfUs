@@ -17,6 +17,7 @@ import ViewSinglePost from "./components/ViewSinglePost"
 import FlashMessages from "./components/FlashMessages"
 import StateContext from "./StateContext"
 import DispatchContext from "./DispatchContext"
+import Profile from "./components/Profile"
 
 function Main() {
   const initialState = {
@@ -65,6 +66,9 @@ function Main() {
           <FlashMessages messages={state.flashMessages} />
           <Header />
           <Switch>
+            <Route path="/profile/:username">
+              <Profile />
+            </Route>
             <Route path="/" exact>
               {state.loggedIn ? <Home /> : <HomeGuest />}
             </Route>
